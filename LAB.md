@@ -24,8 +24,6 @@ Configure the root of your repository with the following files and directories. 
 
 ## Feature Tasks
 For this assignment you will be building a HTTP server.
-#### Body Parser Module
-#### URL Parser Module
 #### Server Module
 The server module is responsible for creating an http server defining all route behavior and exporting an interface for starting and stoping the server. It should export an object with `start` and `stop` methods. The start and stop methods should each return a promise that resolves on success and rejects on error.
 ###### GET /
@@ -95,5 +93,9 @@ When a client makes a POST request to /api/cowsay it should send JSON that inclu
 | With text query | 200 | JSON | `{"content": "<cowsay cow text>"}` |
 
 
-## Stretch Goals
-Add the ability to change the cowfile on GET /cowsay, GET /api/cowsay, and POST /api/cowsay - **ex: dragon, sheep, etc**
+## Cow Variatons
+ * Design and implement a feature to change the cowfile on GET /cowsay, GET /api/cowsay, and POST /api/cowsay - **ex: dragon, sheep, etc**
+   * You can find the different type of animals cowsay supports at https://github.com/piuccio/cowsay/tree/master/cows
+* This is a design task. You neeed decide how to change your code structure implement the feature.
+
+
