@@ -93,6 +93,11 @@ When a client makes a POST request to /api/cowsay it should send JSON that inclu
 | With text query | 200 | JSON | `{"content": "<cowsay cow text>"}` |
 
 
+## HTTPie commands
+* `http GET :3000/pathname text=="judy vue"`
+* `http POST :3000/pathname name=vincio`
+
+
 ## Cow Variatons
  * Design and implement a feature to change the cowfile on GET /cowsay, GET /api/cowsay, and POST /api/cowsay - **ex: dragon, sheep, etc**
    * You can find the different type of animals cowsay supports at https://github.com/piuccio/cowsay/tree/master/cows
